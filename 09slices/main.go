@@ -27,10 +27,20 @@ func main() {
 	// highScore[4] = 237 // will not work
 
 	highScore = append(highScore, 500, 300, 600)
-	fmt.Println(highScore)
+	// fmt.Println(highScore)
 
 	sort.Ints(highScore)
 
 	fmt.Println(highScore)
-	fmt.Println(sort.IntsAreSorted(highScore))
+	// fmt.Println(sort.IntsAreSorted(highScore))
+
+	//How to remove a value from slices based on index
+
+	var courses = []string{"reactjs", "javascript", "ruby", "python"}
+	fmt.Println(courses)
+
+	var index int = 2
+
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
 }
