@@ -1,0 +1,11 @@
+/*
+GO COMMANDS
+go mod tidy => Removes unused modules and import missing modules
+go mod verify => Checks and verifies all the modules your app is using
+go mod graph => List all modules and shows you what is dependent on what
+go mod edit -go <version> => Can be used to change the go version of your project or manually change it by hand in the go mod file.
+go mod edit -module <module name> => Can be used to change the module name
+go mod vendor => Creates a folder that contains the modules for you project (just like the node_modules folder in node) for use at runtime, that's the application can be run using the installed modules from the vendor folder and not pull from the web with the commang <go run -mod=vendor main.go>
+go list all => List all the installed modules on the system
+go list -m all => List all the modules installed for the app only
+*/
